@@ -10,6 +10,6 @@ class PortalInteractionTest(BrowserBaselineTest):
             try:
                 page = browser.new_page()
                 page.goto(self.origin + "detail?id=" + DATA["items"][0]["id"], wait_until="domcontentloaded")
-                page.locator('#access').focus();page.keyboard.press('Enter');self.assertTrue(page.locator('#access-dialog').is_visible());self.assertEqual(page.locator(':focus').get_attribute('id'),'dismiss')
+                page.locator('#access').focus();page.keyboard.press('Enter');self.assertTrue(page.locator('#access-dialog').is_visible());page.locator('#floor').select_option('二层');self.assertFalse(page.locator('#access-dialog').is_visible());self.assertEqual(page.locator('#service-day').inner_text(),'周四开放')
             finally:
                 browser.close()
