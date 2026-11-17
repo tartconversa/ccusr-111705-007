@@ -20,7 +20,12 @@
         "楼层-备选"
       ],
       "detail": "键盘焦点：助行辅具",
-      "preview": "周二开放"
+      "preview": "周二开放",
+      "floors": [
+        {"floor": "一层", "service_day": "周二开放"},
+        {"floor": "二层", "service_day": "周四开放"}
+      ],
+      "service_terms": "键盘可达的服务条款"
     },
     {
       "id": "senior-02",
@@ -31,7 +36,16 @@
         "楼层-备选"
       ],
       "detail": "键盘焦点：听力设备",
-      "preview": "周四开放"
+      "preview": "周四开放",
+      "floors": [
+        {"floor": "二层", "service_day": "周四开放"},
+        {"floor": "三层", "service_day": "时段待公布"}
+      ],
+      "service_terms": {
+        "mouse": "鼠标点击的服务说明：听力设备现场须知",
+        "keyboard": "键盘打开的服务说明：简版说明，缺少资格条款"
+      },
+      "keyboard_defect": true
     }
   ]
 }
